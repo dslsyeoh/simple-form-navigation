@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import org.tbee.javafx.scene.layout.fxml.MigPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<!--
+  ~ Author Steven Yeoh
+  ~ Copyright (c) 2019. All rights reserved
+  -->
+
+<BorderPane fx:id="rootPane2" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.dsl.form.navigation.controllers.Page2Controller">
+
+    <fx:define>
+        <fx:include source="page3.fxml" fx:id="page3"/>
+    </fx:define>
+
+    <center>
+        <MigPane layout="ins 10, wrap" cols="[]10[]10[]10[]">
+            <Label>Page 2</Label>
+            <Button onAction="#back">Back</Button>
+            <Button onAction="#next">Next</Button>
+            <Button onAction="#showHistory">Show history</Button>
+        </MigPane>
+    </center>
+</BorderPane>

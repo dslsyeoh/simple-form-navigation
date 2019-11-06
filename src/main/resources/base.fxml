@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import org.tbee.javafx.scene.layout.fxml.MigPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<!--
+  ~ Author Steven Yeoh
+  ~ Copyright (c) 2019. All rights reserved
+  -->
+
+<BorderPane fx:id="rootPane" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.dsl.form.navigation.controllers.BaseController">
+
+    <fx:define>
+        <fx:include source="page1.fxml" fx:id="page1"/>
+        <fx:include source="page2.fxml" fx:id="page2"/>
+        <fx:include source="page3.fxml" fx:id="page3"/>
+    </fx:define>
+
+    <center>
+        <MigPane fx:id="content" layout="ins 10, wrap" cols="[]10[]10[]10[]">
+            <Label>Hello World</Label>
+            <Button onAction="#jumpToPage1">Jump to Page 1</Button>
+            <Button onAction="#jumpToPage2">Jump to Page 2</Button>
+            <Button onAction="#jumpToPage3">Jump to Page 3</Button>
+        </MigPane>
+    </center>
+</BorderPane>
